@@ -3,11 +3,31 @@
 <head>
 	<meta charset="utf-8">
 	<title>Erik Klein - Digital CV</title>
+	<style>
+	body {
+		font-family: Garamond, serif;
+		font-size: 120%;
+	}
+	h1 {
+		color: darkred;
+		font-size: 3em;
+	}
+	h2 {
+		color: orangered;
+		font-size: 2.5em;
+	}
+	h3 {
+		color: orange;
+		font-size: 2em;
+	}
+	</style>
 </head>
 <body>
-	<h1>Welcome! I'm Erik Klein. This is my digital CV and demo web page. </h1>
-	<h2>My Story</h2>
-	I always loved thinking. From a young age, I got promoted by organizations for gifted students, like Hector-Seminar, Deutsche JuniorAkademien and Heidelberger Life-Science Lab, and discovered my interest and talent in computer science early. I started programming in 6th grade, and it captivated me since then. I always had the passion to solve problems, learn new technologies and build something visionary and useful. Since then, I've learned a lot and had a strong track-record, so that I consider my skills almost BSc-CS-level, and able to perform sufficiently at a Junior Software Engineer role.
+	<h1>Welcome!</h1>
+	<div style="font-weight: bold;">I'm Erik Klein. This is my digital CV and demo web page.</div>
+	<h2>About Me</h2>
+	<div id="photo_of_me"><img src="photo_of_me.jpg"></div>
+	<div id="about_me">I'm a 19 year old from Germany and recently finished my Abiturs. I always loved thinking. From a young age, I got promoted by organizations for gifted students, like Hector-Seminar, Deutsche JuniorAkademien and Heidelberger Life-Science Lab, and discovered my interest and talent in computer science early. I started programming in 6th grade, and it captivated me since then. I always had the passion to solve problems, learn new technologies and build something visionary and useful. Since then, I've learned a lot and had a strong track-record, so that I consider myself able to perform sufficiently as a working student in a software development.</div>
 	<h2>Skills</h2>
 	<h3>Algorithm Design</h3>
 	I'm an expert at algorithm design, and able to come up with the best algorithms for complex problems. I was one of 20 German pupils to receive an extensive training in competitive programming as part of "IOI-Training" by Bundesweite Informatikwettbewerbe. This included three years of camps, lectures and practice contests. I mastered the following topics:
@@ -30,15 +50,13 @@
 		<li>Programming in C++</li>
 		<li>Handling Intractable Problems</li>
 	</ul>
-	I solved more than 1000 olympiad problems and received awards from prestigious multinational competitions for high school students, e.g.
+	I solved more than 1000 olympiad problems, was consistently one of the Top 0.3% of high school competitive programmers in Germany and received awards from prestigious multinational competitions for high school students, e.g.
 	<ul>
 		<li>Central European Olympiad in Informatics (CEOI'21), 3rd place in DACH region. Only top 4 competitors from each country are selected for the team/delegation to participate.</li>
 		<li>Baltic Olympiad in Informatics (BOI'21), Participant in German Team (top 6 people)</li>
 		<li>USA Computing Olympiad (USACO), Advanced to Gold Division (there are four divisions, from Bronze to Platinum)</li>
 		<li>Bundeswettbewerb Informatik (BWINF), Prize Winner at Final Round, Top 12 out of 1700 participants</li>
 		<li>Swiss Olympiad in Informatics (SOI), 7th place in first round, with 200 participants</li>
-		<li>XVI Moscow Open Olympiad in Programming, one of 400 Finalists out of 1500 participants from CIS-States</li>
-		<li>Technocup '20, '21 and '22, Finalist (out of 4500 participants)</li>
 	</ul>
 	<h3>Software Engineering</h3>
 	I took the Coursera 3-Course Specialization by Hong Kong University of Science and Technology HKUST, where I learned the theory of:
@@ -70,6 +88,7 @@
 		<li>Recommender Systems</li>
 		<li>Improving Deep Neural Networks: Hyperparameter Tuning, Regularization and Optimization</li>
 	</ul>
+	I applied this knowledge and used the algorithms in Python during two of my internships.
 	<h3>Other</h3>
 	I was educated in a two-year intense course in high school, where I additionally learned:
 	<ul>
@@ -80,28 +99,50 @@
 	</ul>
 	<h3>Tech Stack</h3>
 	<ul>
-		<li>C++</li>
-		<li>Java</li>
-		<li>Python</li>
-		<li>Keras</li>
-		<li>Tensorflow</li>
-		<li>Scikit-Learn</li>
-		<li>Matlab/Octave</li>
-		<li>Git</li>
-		<li>UML</li>
-		<li>SQL</li>
-		<li>HTML</li>
-		<li>CSS</li>
-		<li>JavaScript</li>
-		<li>Scrum</li>
+		<li>
+			Programming Languages:
+			<ul>
+				<li>C++</li>
+				<li>Java</li>
+				<li>Python</li>
+			</ul>
+		</li>
+		<li>
+			Machine Learning:
+			<ul>
+				<li>Keras</li>
+				<li>Tensorflow</li>
+				<li>Scikit-Learn</li>
+				<li>Matlab/Octave</li>
+			</ul>
+		</li>
+		<li>
+			Web Development:
+			<ul>
+				<li>HTML</li>
+				<li>CSS</li>
+				<li>JavaScript</li>
+			</ul>
+		</li>
+		<li>
+			Misc:
+			<ul>
+				<li>Git</li>
+				<li>UML</li>
+				<li>SQL</li>
+				<li>Scrum</li>
+			</ul>
+		</li>
 	</ul>
 	<h2>Experience</h2>
+	I have a total of 0.4 years of full-time work experience:
 	<ul>
-		<li>ITscope Gmbh: I worked as Software Developer for 9 weeks, where I implemented a novel and very useful machine learning system. The CEO was very satisfied [Reference].</li>
-		<li>Omikron Data Quality GmbH: I worked as Algorithm Engineer for 2 weeks and derived a revolutionary machine learning application to help the company's main algorithm.</li>
+		<li>ITscope Gmbh: I worked as Software Developer for 9 weeks, where I implemented a novel and very useful machine learning system. The CEO was very satisfied [References].</li>
 		<li>QAware GmbH: For one year I was pupil scholarship holder, which means I worked on a project which relied on a machine learning system and was important for a new product. This summer, I'm going to do a 11-week internship there.</li>
+		<li>Omikron Data Quality GmbH: I worked as Algorithm Engineer for 2 weeks and derived a revolutionary machine learning application to help the company's main algorithm.</li>
 	</ul>
-	<h2>Hobbies</h2>
-	My former hobby was chess, and also japanese chess (Shogi). I played every day, and improved my skills so much that I reached 1st Dan master rank (black belt) and became youth champion in Germany three times.
+	<footer>
+		&copy; Erik Klein, 2022
+	</footer>
 </body>
 </html>
