@@ -37,34 +37,27 @@
 		font-style: italic;
 		text-align: center;
 	}
-	@media (min-width: 1200px) {
-		.two {
-			width: 50%;
-			float: left;
-		}
-		.after_two {
-			clear: left;
-		}
-	}
 	</style>
 </head>
 <body>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 	<h1>Welcome!</h1>
-	<div>
-		<div class="two">
-			<div id="intro">
-				I'm Erik Klein. This is my digital CV and demo web page. About me:
-				<ul>
-					<li>Ex-Competitive Programmer</li>
-					<li>Passionate Software Engineer</li>
-				</ul>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-2">
+				<div id="intro">
+					I'm Erik Klein. This is my digital CV and demo web page. About me:
+					<ul>
+						<li>Ex-Competitive Programmer</li>
+						<li>Passionate Software Engineer</li>
+					</ul>
+				</div>
+				I'm a 19 year old from Germany and recently finished my Abiturs. I always loved thinking. From a young age, I got promoted by organizations for gifted students, like Hector-Seminar, Deutsche JuniorAkademien and Heidelberger Life-Science Lab, and discovered my interest and talent in computer science early. I started programming in 6th grade, and it captivated me since then. I always had the passion to solve problems, learn new technologies and build something visionary and useful. Since then, I've learned a lot and had a strong track-record, so that I consider myself able to perform sufficiently as a working student in a software development.
 			</div>
-			I'm a 19 year old from Germany and recently finished my Abiturs. I always loved thinking. From a young age, I got promoted by organizations for gifted students, like Hector-Seminar, Deutsche JuniorAkademien and Heidelberger Life-Science Lab, and discovered my interest and talent in computer science early. I started programming in 6th grade, and it captivated me since then. I always had the passion to solve problems, learn new technologies and build something visionary and useful. Since then, I've learned a lot and had a strong track-record, so that I consider myself able to perform sufficiently as a working student in a software development.
+			<div class="col-lg-2"><img src="photo_of_me.jpg", width="75%"></div>
 		</div>
-		<div class="two"><img src="photo_of_me.jpg", width="75%"></div>
 	</div>
-	<h2 class="after_two">Skills</h2>
+	<h2>Skills</h2>
 	<h3>Algorithm Design</h3>
 	I'm an expert at algorithm design, and able to come up with the best algorithms for complex problems. I was one of 20 German pupils to receive an extensive training in competitive programming as part of "IOI-Training" by Bundesweite Informatikwettbewerbe. This included three years of camps, lectures and practice contests.
 	<figure><img src="lg.png", width="75%"><figcaption>The German IOI-Training Team</figcaption></figure>
@@ -88,8 +81,9 @@
 		<li>Programming in C++</li>
 		<li>Handling Intractable Problems</li>
 	</ul>
-	<div>
-		<div class="two">
+	<div class="container">
+	<div class="row">
+		<div class="col-lg-2">
 			I solved more than 1000 olympiad problems, was consistently one of the Top 0.3% of high school competitive programmers in Germany and received awards from prestigious multinational competitions for high school students, e.g.
 			<ul>
 				<li>Central European Olympiad in Informatics (CEOI'21), 3rd place in DACH region. Only top 4 competitors from each country are selected for the team/delegation to participate.</li>
@@ -99,7 +93,7 @@
 				<li>Swiss Olympiad in Informatics (SOI), 7th place in first round, with 200 participants</li>
 			</ul>
 		</div>
-		<div class="two">
+		<div class="col-lg-2">
 			<!-- make galery -->
 			<figure><img src="ceoi_sommerrodeln.jpg", width="75%"><figcaption>Germany at CEOI</figcaption></figure>
 			<figure><img src="contest.jpg", width="75%"><figcaption>Distributed contest setting</figcaption></figure>
@@ -109,7 +103,8 @@
 			<figure><img src="soiday.jpg", width="75%"><figcaption>SOI day</figcaption></figure>
 		</div>
 	</div>
-	<h3 class="after_two">Software Engineering</h3>
+	</div>
+	<h3>Software Engineering</h3>
 	I took the Coursera 3-Course Specialization by Hong Kong University of Science and Technology HKUST, where I learned the theory of:
 	<ul>
 		<li>Requirements Analysis and Modeling, inc. Use-Case Diagrams</li>
