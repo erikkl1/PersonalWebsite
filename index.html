@@ -13,7 +13,6 @@
 		box-sizing: border-box;
 	}
 	body {
-		
 		font-size: 120%;
 		font-family: 'Roboto', sans-serif;
 	}
@@ -49,7 +48,11 @@
 	.row {
 	    display: flex;
 	    align-items: center;
-	} 
+	}
+	.row>* {
+		padding-left: 0;
+		padding-right: 0;
+	}
 	</style>
 </head>
 <body class="p-3">
@@ -68,7 +71,7 @@
 		}
 	</script>
 	<div class="container-fluid">
-		<div class="row m-5">
+		<div class="row mt-5 mb-5 ml-1 mr-1">
 			<div class="col-lg-2 col-md-4 col-sm-12"><a href="#top">About me</a></div>
 			<div class="col-lg-2 col-md-4 col-sm-12"><a href="#cp">Ex-Competitive Programmer</a></div>
 			<div class="col-lg-2 col-md-4 col-sm-12"><a href="#win">Awards</a></div>
@@ -76,7 +79,7 @@
 			<div class="col-lg-2 col-md-4 col-sm-12"><a href="#web">Full-Stack Web Developer</a></div>
 			<div class="col-lg-2 col-md-4 col-sm-12"><a href="#ml">Machine Learning Enthusiast</a></div>
 		</div>
-		<div class="row m-5">
+		<div class="row mt-5 mb-5 ml-1 mr-1">
 			<div class="col-lg-6">
 				<h1 class="top">Erik Klein</h1>
 				<p>I'm a 19 year old from Germany and recently finished my Abiturs. I'm currently doing an internship as a Software Engineer at QAware GmbH in Munich and will start studying Computer Science at TH Rosenheim next semester.</p>
@@ -84,7 +87,7 @@
 			<div class="col-lg-6"><img src="photo_of_me.jpg", width="75%"></div>
 		</div>
 		<a class="ct-btn-scroll ct-js-btn-scroll" href="#cp"><img src="anchordown.png", width="4%"></a>
-		<div class="row rev m-5">
+		<div class="row rev mt-5 mb-5 ml-1 mr-1">
 			<div class="col-lg-6">
 				<figure><img src="lg.png", width="75%"><figcaption>The German IOI-Training Team</figcaption></figure>
 			</div>
@@ -115,7 +118,7 @@
 			</div>
 		</div>
 		<a class="ct-btn-scroll ct-js-btn-scroll" href="#win"><img src="anchordown.png", width="4%"></a>
-		<div class="row m-5">
+		<div class="row mt-5 mb-5 ml-1 mr-1">
 			<div class="col-lg-6">
 				<h1 id="win">Awards</h1>
 				<p>I solved more than 1000 olympiad problems and was consistently one of the Top 0.3% of high school competitive programmers in Germany. Though I didn't qualify for IOI, I received awards from prestigious multinational competitions for high school students, e.g.</p>
@@ -133,7 +136,7 @@
 			</div>
 		</div>
 		<a class="ct-btn-scroll ct-js-btn-scroll" href="#swe"><img src="anchordown.png", width="4%"></a>
-		<div class="row rev m-5">
+		<div class="row rev mt-5 mb-5 ml-1 mr-1">
 			<div class="col-lg-6">
 				<figure><img src="itscope.jpg", width="75%"><figcaption>Work at ITscope GmbH</figcaption></figure>
 				<figure><img src="coursera2.PNG", width="75%"><figcaption>HKUST Specialization</figcaption></figure>
@@ -157,7 +160,7 @@
 			</div>
 		</div>
 		<a class="ct-btn-scroll ct-js-btn-scroll" href="#web"><img src="anchordown.png", width="4%"></a>
-		<div class="row m-5">
+		<div class="row mt-5 mb-5 ml-1 mr-1">
 			<div class="col-lg-6">
 				<h1 id="web">Full-Stack Web Developer</h1>
 				<p>Currently I am breaking into web dev, learning the basics in a Coursera course by Johns Hopkins University and taking a Coursera specialization by HKUST. I am fond of these technologies:
@@ -176,7 +179,7 @@
 			</div>
 		</div>
 		<a class="ct-btn-scroll ct-js-btn-scroll" href="#ml"><img src="anchordown.png", width="4%"></a>
-		<div class="row rev m-5">
+		<div class="row rev mt-5 mb-5 ml-1 mr-1">
 			<div class="col-lg-6">
 				<figure><img src="coursera.PNG", width="75%"><figcaption>Completed the most popular ML course</figcaption></figure>
 			</div>
