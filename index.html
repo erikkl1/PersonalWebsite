@@ -54,6 +54,19 @@
 </head>
 <body class="p-3">
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+	<script type="text/javascript">
+		var all_imgs = ["ceoi_sommerrodeln.jpg","contest.jpg","boi_team.jpg","prizewinner.jpg","ceoi_team.jpg","soiday.jpg"];
+		for(var i = 0; i < all_imgs.length; i++){
+			var imgs = new Image();
+			imgs.src = all_imgs[i];
+		}
+		var x = 0;
+		function swapImg() {
+			x = (x+1)%all_imgs.length;
+			var doc = document.getElementById("gallery");
+			doc.src = all_imgs[x];
+		}
+	</script>
 	<div class="container-fluid">
 		<div class="row m-5">
 			<div class="col-lg-2 col-md-4 col-sm-12"><a href="#top">About me</a></div>
@@ -116,12 +129,7 @@
 			</div>
 			<div class="col-lg-6">
 				<!-- make galery -->
-				<figure><img src="ceoi_sommerrodeln.jpg", width="75%"><figcaption>Germany at CEOI</figcaption></figure>
-				<figure><img src="contest.jpg", width="75%"><figcaption>Distributed contest setting</figcaption></figure>
-				<figure><img src="boi_team.jpg", width="75%"><figcaption>BOI Team</figcaption></figure>
-				<figure><img src="prizewinner.jpg", width="75%"><figcaption>BWINF award ceremony</figcaption></figure>
-				<figure><img src="ceoi_team.jpg", width="75%"><figcaption>CEOI opening ceremony</figcaption></figure>
-				<figure><img src="soiday.jpg", width="75%"><figcaption>SOI day</figcaption></figure>
+				<figure><img id="gallery", src="ceoi_sommerrodeln.jpg", width="75%", onclick="swapImg();"><figcaption>Click for next image!</figcaption></figure>
 			</div>
 		</div>
 		<a class="ct-btn-scroll ct-js-btn-scroll" href="#swe"><img src="anchordown.png", width="4%"></a>
