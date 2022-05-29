@@ -36,6 +36,17 @@
 		  display: flex;
 		  flex-direction: column-reverse;
 		}
+		.masthead {
+			min-height: 45vh;
+		}
+		h1 {
+			font-size: calc(1.525rem + 3.3vw);
+		}
+	}
+	@media (min-width: 1200px) {
+		.masthead {
+			min-height: 90vh;
+		}
 	}
 	.row {
 	    display: flex;
@@ -48,6 +59,15 @@
 	nav {
 		background-color: white;
 		border-bottom: 2px solid #e9007f;
+	}
+	.masthead {
+		background-size: cover;
+		position: relative;
+	}
+	.color-overlay {
+		position: absolute;
+		width: 100%;
+		height: 100%;
 	}
 	</style>
 </head>
@@ -89,11 +109,15 @@
 			</div>
 		</div>
 	</nav>
+	<div class="masthead" style="background-image: url('hopp.jpg');">
+		<div id="changeText" class="color-overlay d-flex justify-content-center align-items-center" style="font-style: italic; font-weight: bold; color: white; color: #e9007f; font-size: 2.5em;"></div>
+	</div>
+	<a id="top" class="ct-btn-scroll ct-js-btn-scroll" href="#top"><img src="anchordown.svg" width="4%"></a>
 	<div class="container-fluid">
 		<div class="row mt-5 mb-5 ml-1 mr-1">
 			<div class="col-lg-6">
-				<h1 class="top">Erik Klein</h1>
-				<p>I'm a 19 year old from Germany and recently finished my Abiturs. I'm currently doing an internship as a Software Engineer at QAware GmbH in Munich and will start studying Computer Science at TH Rosenheim next semester.</p>
+				<h1>About Me</h1>
+				<p>I'm Erik, a 19 year old from Germany and recently finished my Abiturs. I'm currently doing an internship as a Software Engineer at QAware GmbH in Munich and will start studying Computer Science at TH Rosenheim next semester.</p>
 				<p>Starting October 2022, I'm looking for a role as Working Student Developer in Munich, where I want to work 20h / week for one year. I feel ready and able to perform 10x, learn new technologies fast and well and deliver results in a team.</p>
 			</div>
 			<div class="col-lg-6"><img src="photo_of_me.jpg" width="75%"></div>
@@ -219,7 +243,54 @@
 		</div>
 	</div>
 	<footer>
-		&copy; Erik Klein, 2022 <a href="#top">To top</a>
+		&copy; Selfmade by Erik Klein (2022) <a href="#top">To top</a>
 	</footer>
+	<script type="text/javascript">
+		var millis = 25;
+		function sleep(ms) {
+		    return new Promise(resolve => setTimeout(resolve, ms));
+		}
+		async function adds(d, c) {
+			await sleep(millis);
+			var real = d.innerHTML.substring(0, d.innerHTML.length - 1);
+			d.innerHTML = real+c+'_';
+			await sleep(millis);
+			d.innerHTML = real+c+"  ";
+			await sleep(4*millis);
+			d.innerHTML = real+c+'_';
+		}
+		async function rem(d) {
+			await sleep(millis);
+			var real = d.innerHTML.substring(0, d.innerHTML.length - 2);
+			d.innerHTML = real+'_';
+			await sleep(millis);
+			d.innerHTML = real+"  ";
+			await sleep(4*millis);
+			d.innerHTML = real+'_';
+		}
+		async function typing(S) {
+			var d = document.getElementById("changeText");
+			d.innerHTML = "";
+
+			for(let i = 0; i < 7; i++)
+				await adds(d,S.charAt(i));
+			await sleep(200);
+			for(let i = 0; i < 4; i++)
+				await rem(d);
+			await sleep(200);
+			for(let i = 3; i < S.length; i++)
+				await adds(d,S.charAt(i));
+			await sleep(2000);
+		}
+		var T = ["Erik Klein", "Young and Energetic", "Algorithm Mastermind", "Love for Tech"];
+		async function do_all() {
+			var i = 0;
+			while(true) {
+				await typing(T[i]);
+				i = (i+1)%T.length;
+			}
+		}
+		do_all();
+	</script>
 </body>
 </html>
