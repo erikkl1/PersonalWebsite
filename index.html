@@ -25,7 +25,11 @@
 	  	margin-left: auto;
 	  	margin-right: auto;
 	}
-	figcaption, a {
+	.upper_quote {
+		color: #e9007f;
+		text-shadow: 2px 2px 5px #FF1D98;
+	}
+	figcaption, a, .quote {
 		color: #e9007f;
 		font-style: italic;
 		text-align: center;
@@ -33,7 +37,6 @@
 	}
 	@media (max-width: 1199px) {
 		.rev {
-		  display: flex;
 		  flex-direction: column-reverse;
 		}
 		.masthead {
@@ -115,136 +118,140 @@
 			</div>
 		</div>
 	</nav>
-	<div class="masthead" style="background-image: url('hopp.jpg');">
-		<div id="changeText" class="color-overlay d-flex justify-content-center align-items-center" style="font-style: italic; font-weight: bold; color: white; color: #e9007f; font-size: 2.5em;"></div>
-	</div>
-	<a id="top" class="ct-btn-scroll ct-js-btn-scroll" href="#top"><img src="anchordown.svg"></a>
 	<div class="container-fluid">
-		<div class="row mt-5 mb-5 ml-1 mr-1">
-			<div class="col-xl-6">
-				<h1>About Me</h1>
-				<p>I'm Erik, a 19 year old from Germany and recently finished my Abiturs. I'm currently doing an internship as a Software Engineer at QAware GmbH in Munich and will start studying Computer Science at TH Rosenheim next semester.</p>
-				<p>Starting October 2022, I'm looking for a role as Working Student Developer in Munich, where I want to work 20h / week for one year. I feel ready and able to perform 10x, learn new technologies fast and well and deliver results in a team.</p>
-			</div>
-			<div class="col-xl-6"><img src="photo_of_me.jpg" width="75%"></div>
+		<div class="masthead" style="background-image: url('hopp.jpg');">
+			<div id="changeText" class="color-overlay d-flex justify-content-center align-items-center" style="font-style: italic; font-weight: bold; color: white; color: #e9007f; font-size: 2.5em;"></div>
 		</div>
-		<a id="cp" class="ct-btn-scroll ct-js-btn-scroll" href="#cp"><img src="anchordown.svg"></a>
-		<div class="row rev mt-5 mb-5 ml-1 mr-1">
-			<div class="col-xl-6">
-				<figure><img src="lg.jpg" width="75%"><figcaption>The German IOI-Training Team</figcaption></figure>
+		<a id="top" class="ct-btn-scroll ct-js-btn-scroll" href="#top"><img src="anchordown.svg"></a>
+		<div class="container-fluid">
+			<div class="row mt-5 mb-5 ml-1 mr-1">
+				<div class="col-xl-6">
+					<h1>About Me</h1>
+					<p class="upper_quote">
+						<span class="quote">&quot;Mr Klein has excellent and comprehensive specialist knowledge, which he used extremely effectively and successfully, even in difficult tasks. His very good comprehension skills enable him to grasp new work situations and problems quickly and accurately. Particularly noteworthy is his extraordinarily high willingness to perform and his high personal commitment with which he approached the necessary steps and brought them to a successful conclusion. His behaviour towards superiors and colleagues was impeccable at all times.&quot;</span> - Benjamin Mund, CEO of ITscope
+					</p>
+					<p>I'm Erik, a 19 year old from Germany and recently finished my Abiturs. I'm currently doing an internship as a Software Engineer at QAware GmbH in Munich and will start studying Computer Science at TH Rosenheim next semester.</p>
+					<p>Starting October 2022, I'm looking for a role as Working Student Developer in Munich, where I want to work 20h / week for one year. I feel ready and able to perform 10x, learn new technologies fast and well and deliver results in a team.</p>
+				</div>
+				<div class="col-xl-6"><img src="photo_of_me.jpg" width="75%"></div>
 			</div>
-			<div class="col-xl-6">
-				<h1>Ex-Competitive Programmer</h1>
-				<p>Algorithms are the base of Computer Science, and it's essential to have a deep understanding of them. I'm an expert at algorithm design, and able to come up with the best algorithms for complex problems. I was one of 20 German pupils to receive an extensive training in competitive programming as part of "IOI-Training" by Bundesweite Informatikwettbewerbe. This included three years of camps, lectures and practice contests. I mastered the following topics:</p>
-				<ul>
-					<li>Graph and Tree Algorithms</li>
-					<li>Dynamic Programming incl. Optimizations</li>
-					<li>Data Structures</li>
-					<li>Sorting and Searching</li>
-					<li>Greedy Algorithms</li>
-					<li>Backtracking and Pruning Strategies</li>
-					<li>Heuristic Methods</li>
-					<li>Brute Force</li>
-					<li>Flows</li>
-					<li>Combinatorics</li>
-				</ul>
-				<p>I acquired many skills, including:</p>
-				<ul>
-					<li>Problem Solving and Analytical Thinking</li>
-					<li>Efficiency and Correctness Analysis</li>
-					<li>Programming in C++</li>
-					<li>Error-Free Implementation under Time Pressure</li>
-					<li>Handling Intractable Problems</li>
-					<li>Understanding Complex Multi-Layer Systems</li>
-					<li>Automatons, Grammars and Languages</li>
-				</ul>
+			<a id="cp" class="ct-btn-scroll ct-js-btn-scroll" href="#cp"><img src="anchordown.svg"></a>
+			<div class="row rev mt-5 mb-5 ml-1 mr-1">
+				<div class="col-xl-6">
+					<figure><img src="lg.jpg" width="75%"><figcaption>The German IOI-Training Team</figcaption></figure>
+				</div>
+				<div class="col-xl-6">
+					<h1>Ex-Competitive Programmer</h1>
+					<p>Algorithms are the base of Computer Science, and it's essential to have a deep understanding of them. I'm an expert at algorithm design, and able to come up with the best algorithms for complex problems. I was one of 20 German pupils to receive an extensive training in competitive programming as part of "IOI-Training" by Bundesweite Informatikwettbewerbe. This included three years of camps, lectures and practice contests. I mastered the following topics:</p>
+					<ul>
+						<li>Graph and Tree Algorithms</li>
+						<li>Dynamic Programming incl. Optimizations</li>
+						<li>Data Structures</li>
+						<li>Sorting and Searching</li>
+						<li>Greedy Algorithms</li>
+						<li>Backtracking and Pruning Strategies</li>
+						<li>Heuristic Methods</li>
+						<li>Brute Force</li>
+						<li>Flows</li>
+						<li>Combinatorics</li>
+					</ul>
+					<p>I acquired many skills, including:</p>
+					<ul>
+						<li>Problem Solving and Analytical Thinking</li>
+						<li>Efficiency and Correctness Analysis</li>
+						<li>Programming in C++</li>
+						<li>Error-Free Implementation under Time Pressure</li>
+						<li>Handling Intractable Problems</li>
+						<li>Understanding Complex Multi-Layer Systems</li>
+						<li>Automatons, Grammars and Languages</li>
+					</ul>
+				</div>
 			</div>
-		</div>
-		<a id="win" class="ct-btn-scroll ct-js-btn-scroll" href="#win"><img src="anchordown.svg"></a>
-		<div class="row mt-5 mb-5 ml-1 mr-1">
-			<div class="col-xl-6">
-				<h1>Awards</h1>
-				<p>I solved more than 1000 olympiad problems and was consistently one of the Top 0.3% of high school competitive programmers in Germany. Though I didn't qualify for IOI, I received awards from prestigious multinational competitions for high school students, e.g.</p>
-				<ul>
-					<li>Central European Olympiad in Informatics (CEOI'21), 3rd place in DACH region. Only top 4 competitors from each country are selected for the team/delegation to participate.</li>
-					<li>Baltic Olympiad in Informatics (BOI'21), Participant in German Team (top 6 people)</li>
-					<li>USA Computing Olympiad (USACO), Advanced to Gold Division (there are four divisions, from Bronze to Platinum)</li>
-					<li>Bundeswettbewerb Informatik (BWINF), Prize Winner at Final Round, Top 12 out of 1700 participants</li>
-					<li>Swiss Olympiad in Informatics (SOI), 7th place in first round, with 200 participants</li>
-				</ul>
+			<a id="win" class="ct-btn-scroll ct-js-btn-scroll" href="#win"><img src="anchordown.svg"></a>
+			<div class="row mt-5 mb-5 ml-1 mr-1">
+				<div class="col-xl-6">
+					<h1>Awards</h1>
+					<p>I solved more than 1000 olympiad problems and was consistently one of the Top 0.3% of high school competitive programmers in Germany. Though I didn't qualify for IOI, I received awards from prestigious multinational competitions for high school students, e.g.</p>
+					<ul>
+						<li>Central European Olympiad in Informatics (CEOI'21), 3rd place in DACH region. Only top 4 competitors from each country are selected for the team/delegation to participate.</li>
+						<li>Baltic Olympiad in Informatics (BOI'21), Participant in German Team (top 6 people)</li>
+						<li>USA Computing Olympiad (USACO), Advanced to Gold Division (there are four divisions, from Bronze to Platinum)</li>
+						<li>Bundeswettbewerb Informatik (BWINF), Prize Winner at Final Round, Top 12 out of 1700 participants</li>
+						<li>Swiss Olympiad in Informatics (SOI), 7th place in first round, with 200 participants</li>
+					</ul>
+				</div>
+				<div class="col-xl-6">
+					<figure><img id="gallery" src="prizewinner.jpg" width="75%" onclick="swapImg();"><figcaption><span onclick="swapImg();">Click for next image!</span></figcaption></figure>
+				</div>
 			</div>
-			<div class="col-xl-6">
-				<figure><img id="gallery" src="prizewinner.jpg" width="75%" onclick="swapImg();"><figcaption><span onclick="swapImg();">Click for next image!</span></figcaption></figure>
+			<a id="swe" class="ct-btn-scroll ct-js-btn-scroll" href="#swe"><img src="anchordown.svg"></a>
+			<div class="row rev mt-5 mb-5 ml-1 mr-1">
+				<div class="col-xl-6">
+					<figure><img src="itscope.jpg" width="75%"><figcaption>Work at ITscope GmbH</figcaption></figure>
+					<figure><img src="coursera2.PNG" width="75%"><figcaption>HKUST Specialization</figcaption></figure>
+				</div>
+				<div class="col-xl-6">
+					<h1>Passionate Software Engineer</h1>
+					<p>I have acqired deep knowledge about the theory of Software Engineering by taking the Coursera 3-Course Specialization by Hong Kong University of Science and Technology HKUST. I can apply important concepts from these fields:</p>
+					<ul>
+						<li>Requirements Analysis and Modeling, inc. UML, Use-Case Diagrams</li>
+						<li>Defensive Programming, Software Testing and Refactoring</li>
+						<li>Agile Methods, Scrum</li>
+						<li>Software Quality</li>
+						<li>Software Analysis incl. Analysis Classes</li>
+						<li>Software Architecture</li>
+						<li>Design Patterns</li>
+						<li>Project Management</li>
+					</ul>
+					<p>I have advanced skills in Java programming and am proficient in version control with Git. To strengthen my skills, I was part of the pupil scholarship program by QAware GmbH, a software company known for it's quality, agile development and expertise in cloud technologies. For one year, I was mentored by one of their software engineers, took part in the further education program and worked in a team of pupils on a project. To gain more experience, practice and become a better developer, I'm doing an 11-week internship at QAware, where I work on a real project with senior engineers and architects.</p>
+					<p>Previously, I was responisble for a machine learning project at ITscope GmbH, a modern local IT company. I worked for 9 weeks as software developer, and finished the work successfully. The system is now in live-use, has big impact (automating the company's processes) and the CEO was satisfied [<a href="https://www.dropbox.com/s/2fmr9712pvdgmxx/Arbeitszeugnis_ITscope2021.pdf?dl=0" target="_blank">Reference 2021</a>, <a href="https://www.dropbox.com/s/y2x77sbiiaaa9e6/BescheinigungITscope18.pdf?dl=0" target="_blank">Reference 2018</a>].</p>
+				</div>
 			</div>
-		</div>
-		<a id="swe" class="ct-btn-scroll ct-js-btn-scroll" href="#swe"><img src="anchordown.svg"></a>
-		<div class="row rev mt-5 mb-5 ml-1 mr-1">
-			<div class="col-xl-6">
-				<figure><img src="itscope.jpg" width="75%"><figcaption>Work at ITscope GmbH</figcaption></figure>
-				<figure><img src="coursera2.PNG" width="75%"><figcaption>HKUST Specialization</figcaption></figure>
+			<a id="web" class="ct-btn-scroll ct-js-btn-scroll" href="#web"><img src="anchordown.svg"></a>
+			<div class="row mt-5 mb-5 ml-1 mr-1">
+				<div class="col-xl-6">
+					<h1>Full-Stack Web Developer</h1>
+					<p>Currently I am breaking into web dev, learning the basics in a Coursera course by Johns Hopkins University and taking a Coursera specialization by HKUST. I am fond of these technologies:
+					<ul>
+						<li>HTML</li>
+						<li>CSS</li>
+						<li>JavaScript</li>
+						<li>Bootstrap</li>
+						<li>jQuery</li>
+						<li>Ajax</li>
+						<li>Angular</li>
+					</ul>
+				</div>
+				<div class="col-xl-6">
+					<figure><img src="webdev.jpg" width="60%"></figure>
+				</div>
 			</div>
-			<div class="col-xl-6">
-				<h1>Passionate Software Engineer</h1>
-				<p>I have acqired deep knowledge about the theory of Software Engineering by taking the Coursera 3-Course Specialization by Hong Kong University of Science and Technology HKUST. I can apply important concepts from these fields:</p>
-				<ul>
-					<li>Requirements Analysis and Modeling, inc. UML, Use-Case Diagrams</li>
-					<li>Defensive Programming, Software Testing and Refactoring</li>
-					<li>Agile Methods, Scrum</li>
-					<li>Software Quality</li>
-					<li>Software Analysis incl. Analysis Classes</li>
-					<li>Software Architecture</li>
-					<li>Design Patterns</li>
-					<li>Project Management</li>
-				</ul>
-				<p>I have advanced skills in Java programming and am proficient in version control with Git. To strengthen my skills, I was part of the pupil scholarship program by QAware GmbH, a software company known for it's quality, agile development and expertise in cloud technologies. For one year, I was mentored by one of their software engineers, took part in the further education program and worked in a team of pupils on a project.
-				To gain more experience, practice and become a better developer, I'm doing an 11-week internship at QAware, where I work on a real project with senior engineers and architects.</p>
-				<p>Previously, I was responisble for a machine learning project at ITscope GmbH, a modern local IT company. I worked for 9 weeks as software developer, and finished the work successfully. The system is now in live-use, has big impact (automating the company's processes) and the CEO was satisfied [<a href="https://www.dropbox.com/s/2fmr9712pvdgmxx/Arbeitszeugnis_ITscope2021.pdf?dl=0" target="_blank">Reference 2021</a>, <a href="https://www.dropbox.com/s/y2x77sbiiaaa9e6/BescheinigungITscope18.pdf?dl=0" target="_blank">Reference 2018</a>].</p>
-			</div>
-		</div>
-		<a id="web" class="ct-btn-scroll ct-js-btn-scroll" href="#web"><img src="anchordown.svg"></a>
-		<div class="row mt-5 mb-5 ml-1 mr-1">
-			<div class="col-xl-6">
-				<h1>Full-Stack Web Developer</h1>
-				<p>Currently I am breaking into web dev, learning the basics in a Coursera course by Johns Hopkins University and taking a Coursera specialization by HKUST. I am fond of these technologies:
-				<ul>
-					<li>HTML</li>
-					<li>CSS</li>
-					<li>JavaScript</li>
-					<li>Bootstrap</li>
-					<li>jQuery</li>
-					<li>Ajax</li>
-					<li>Angular</li>
-				</ul>
-			</div>
-			<div class="col-xl-6">
-				<figure><img src="webdev.jpg" width="60%"></figure>
-			</div>
-		</div>
-		<a id="ml" class="ct-btn-scroll ct-js-btn-scroll" href="#ml"><img src="anchordown.svg"></a>
-		<div class="row rev mt-5 mb-5 ml-1 mr-1">
-			<div class="col-xl-6">
-				<figure><img src="coursera.PNG" width="75%"><figcaption>Completed the most popular ML course</figcaption></figure>
-			</div>
-			<div class="col-xl-6">
-				<h1>Machine Learning Enthusiast</h1>
-				<p>I learned multiple data science methods in an openHPI course:</p>
-				<ul>
-					<li>Different types of Clustering</li>
-					<li>Classification Algorithms</li>
-					<li>Frequent Itemset Mining, Outlier Mining</li>	
-				</ul>
-				<p>I took multiple Coursera Courses by Andrew Ng, where I learned:</p>
-				<ul>
-					<li>Linear Algebra, Matlab/Octave</li>
-					<li>Linear and Logistic Regression</li>	
-					<li>Theory and Practical Advice of Neural Networks</li>
-					<li>Support Vector Machines and their Kernels</li>
-					<li>Principal Component Analysis for Dimensionality Reduction</li>
-					<li>Anomaly Detection</li>
-					<li>Recommender Systems</li>
-					<li>Improving Deep Neural Networks: Hyperparameter Tuning, Regularization and Optimization</li>
-				</ul>
-				<p>I applied this knowledge and used the algorithms in Python during two of my internships, where I used Scikit-Learn, Tensorflow, Keras and SQL.</p>
+			<a id="ml" class="ct-btn-scroll ct-js-btn-scroll" href="#ml"><img src="anchordown.svg"></a>
+			<div class="row rev mt-5 mb-5 ml-1 mr-1">
+				<div class="col-xl-6">
+					<figure><img src="coursera.PNG" width="75%"><figcaption>Completed the most popular ML course</figcaption></figure>
+				</div>
+				<div class="col-xl-6">
+					<h1>Machine Learning Enthusiast</h1>
+					<p>I learned multiple data science methods in an openHPI course:</p>
+					<ul>
+						<li>Different types of Clustering</li>
+						<li>Classification Algorithms</li>
+						<li>Frequent Itemset Mining, Outlier Mining</li>	
+					</ul>
+					<p>I took multiple Coursera Courses by Andrew Ng, where I learned:</p>
+					<ul>
+						<li>Linear Algebra, Matlab/Octave</li>
+						<li>Linear and Logistic Regression</li>	
+						<li>Theory and Practical Advice of Neural Networks</li>
+						<li>Support Vector Machines and their Kernels</li>
+						<li>Principal Component Analysis for Dimensionality Reduction</li>
+						<li>Anomaly Detection</li>
+						<li>Recommender Systems</li>
+						<li>Improving Deep Neural Networks: Hyperparameter Tuning, Regularization and Optimization</li>
+					</ul>
+					<p>I applied this knowledge and used the algorithms in Python during two of my internships, where I used Scikit-Learn, Tensorflow, Keras and SQL.</p>
+				</div>
 			</div>
 		</div>
 	</div>
